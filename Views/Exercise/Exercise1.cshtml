@@ -1,0 +1,25 @@
+﻿@model Exercise.Models.Exercise1
+
+@{
+    ViewBag.Title = "Exercise1";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+<div>
+    @Html.ActionLink("Technical test", "Index")
+    <br />
+    <br />
+    <div class="remark">Refresh (F5) to generate new data</div>
+    <h2>Exercise 1 - Run up the stairs</h2>
+    Steps per stride: @Model.StepsPerStride
+    <br />
+    <br />
+    @{
+        foreach (var print in Model.PrintResults)
+        {
+            <div>@print</div>
+        }
+    }
+    <br />
+    <b>Total strides: @ViewBag.StepsPerStride</b>
+</div>

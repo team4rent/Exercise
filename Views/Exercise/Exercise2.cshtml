@@ -1,0 +1,14 @@
+﻿@model Exercise.Models.Exercise2
+@{
+    ViewBag.Title = "Exercise2";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+@Html.ActionLink("Technical test", "Index")
+<br />
+<br />
+<div class="remark">Refresh (F5) to generate new data</div>
+<h2>Exercise 2 - Safest place in the galaxy</h2>
+<div>
+    @Html.Raw(Model.PrintCase.ToString())
+</div>

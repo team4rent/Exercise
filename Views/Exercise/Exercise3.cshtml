@@ -1,0 +1,13 @@
+﻿@model Exercise.Models.Exercise3
+@{
+    ViewBag.Title = "Exercise3";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+@Html.ActionLink("Technical test", "Index")
+<br />
+<br />
+<div class="remark">Input data has been hard-coded</div>
+<h2>Exercise 3 - Adding this, adding that</h2>
+@Model.PrintInputs<br />
+@Model.PrintResult
