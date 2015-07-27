@@ -18,16 +18,21 @@ namespace Exercise.Models
         #region Metods
         public AddResult Add_UsingARecursiveAlgorithm_ValuesAreAdded(byte[] f, byte[] s)
         {
-            // Arrange
-            PrintInputs = Print(f, s);
+            if (f != null && s != null)
+            {
+                // Arrange
+                PrintInputs = Print(f, s);
 
-            // Act
-            var result = AddRecursive(f, s);
+                // Act
+                var result = AddRecursive(f, s);
 
-            PrintResult = Print(result);
+                PrintResult = Print(result);
 
-            // Assert
-            return new AddResult(f, s, result);
+                // Assert
+                return new AddResult(f, s, result);
+            }
+            else
+                return new AddResult();
         }
 
         /// <summary>
