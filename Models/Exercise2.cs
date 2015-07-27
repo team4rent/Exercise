@@ -15,7 +15,7 @@ namespace Exercise.Models
         /// <summary>
         /// Number of test cases
         /// </summary>
-        private int T { get; set; }
+        public int T { get; set; }
 
         /// <summary>
         /// Number of bombs
@@ -87,7 +87,7 @@ namespace Exercise.Models
         /// </summary>
         /// <param name="inputs">list of numbers</param>
         /// <returns>number</returns>
-        private static int GetValue(params int[] input)
+        public static int GetValue(params int[] input)
         {
             int total = 0;
 
@@ -99,13 +99,13 @@ namespace Exercise.Models
             return total;
         }
 
-       /// <summary>
-       /// Compare bomb position with distance
-       /// </summary>
-       /// <param name="value">bomb position</param>
-       /// <param name="distence">distance</param>
-       /// <param name="bombNumber">nearest bomb</param>
-        private static void Compare(int value, int distance, int bombNumber)
+        /// <summary>
+        /// Compare bomb position with distance
+        /// </summary>
+        /// <param name="value">bomb position</param>
+        /// <param name="distence">distance</param>
+        /// <param name="bombNumber">nearest bomb</param>
+        public static void Compare(int value, int distance, int bombNumber)
         {
             int result = PositionValue - value;
 
