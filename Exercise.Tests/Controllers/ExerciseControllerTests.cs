@@ -22,28 +22,48 @@ namespace Exercise.Controllers.Tests
 
         }
 
+        [TestCategory("Exercise1")]
         [TestMethod()]
         public void Exercise1Test()
         {
-            exercise1.Flight = new int[] { 5 };
+            exercise1.Flight = new int[] { 15 };
 
-            for (var i = 0; i < exercise1.FlightsOfStairs; i++)
-            {
-                exercise1.FlightOfStairs = 4;
-                exercise1.Flight[i] = exercise1.FlightOfStairs;
-            }
+            exercise1.StepsPerStride = 2;
+
+            Assert.AreEqual(8, exercise1.GetStrides());
+        }
+
+        [TestCategory("Exercise1")]
+        [TestMethod()]
+        public void Exercise1Test1()
+        {
+            exercise1.Flight = new int[] { 15, 15 };
+
+            exercise1.StepsPerStride = 2;
+
+            Assert.AreEqual(18, exercise1.GetStrides());
+        }
+
+        [TestCategory("Exercise1")]
+        [TestMethod()]
+        public void Exercise1Test2()
+        {
+            exercise1.Flight = new int[] { 5, 11, 9, 13, 8, 30, 14 };
 
             exercise1.StepsPerStride = 3;
 
-            Assert.AreEqual(3, exercise1.GetStrides());
+            Assert.AreEqual(44, exercise1.GetStrides());
         }
 
+
+        [TestCategory("Exercise3")]
         [TestMethod()]
         public void Exercise3TestNullValues()
         {
             exercise3.Add_UsingARecursiveAlgorithm_ValuesAreAdded(null, null);
         }
 
+        [TestCategory("Exercise3")]
         [TestMethod()]
         public void Exercise3TestNullValue()
         {

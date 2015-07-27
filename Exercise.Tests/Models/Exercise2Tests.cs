@@ -11,6 +11,7 @@ namespace Exercise.Models.Tests
     [TestClass()]
     public class Exercise2Tests
     {
+        [TestCategory("Exercise2")]
         [TestMethod()]
         public void StartTestCaseTest()
         {
