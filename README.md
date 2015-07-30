@@ -1,4 +1,4 @@
-<h1>Technical Test</h1>
+<h1>Technical test</h1>
 
 <h2>Exercise 1 - Run up the stairs</h2>
 <p>You are climbing a staircase. The staircase consists of some number of flights of stairs separated by landings. A flight is a continuous series of steps from one landing to another. You are a reasonably tall athletic person, so you can climb a certain number of steps in one stride. However, after each flight, there is a landing which you cannot skip because you need to turn around for the next flight (which continues in a different direction).
