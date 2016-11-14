@@ -10,6 +10,3 @@ You must find the point with the maximum distance to the nearest bomb, which you
 
 <h2>Exercise 3 - Adding this, adding that</h2>
 <p>The algorithm should be non destructive to the inputs. The algorithm should be able to handle large input lengths, of a couple of thousand values, but the input will never be large enough to cause a stack overflow.</p>
-
-<h2>Demo</h2>
-Demo version is deployed to <a href="http://technicaltest.azurewebsites.net/" target="_blank"> http://technicaltest.azurewebsites.net/.</a>
